@@ -1,0 +1,25 @@
+-- 1
+SELECT * FROM chevauxdecurie.cheval;
+SELECT * FROM chevauxdecurie.personne;
+SELECT * FROM chevauxdecurie.race;
+SELECT * FROM chevauxdecurie.concours;
+SELECT * FROM chevauxdecurie.croissance;
+
+-- 2
+SELECT * FROM chevauxdecurie.cheval WHERE nomRace = 'Arabian' ORDER BY nom_cheval DESC;
+
+-- 3
+SELECT taille_Race AS tailleType, poids_Rac AS Poidstype 
+FROM chevauxdecurie.race 
+WHERE nom = 'Arabian';
+
+-- 4.
+-- 5
+SELECT *
+FROM chevauxdecurie.personne
+WHERE numPersSup IS NULL;
+
+-- 6
+SELECT *
+FROM chevauxdecurie.concours
+WHERE AnneeConcours = 2019;
